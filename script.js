@@ -21,7 +21,6 @@ function generatePassword () {
     var outputPassword = "";
 
     var passwordLength = prompt ("Select a Length between 8 to 128 characters");
-    if (passwordLength !=null) {
         if (passwordLength >=8 && passwordLength <= 128) {
 
             alert("Minimum of one uppercase, lowercase, number, and/ or special character must be selected");
@@ -32,6 +31,7 @@ function generatePassword () {
             var lowerCase = confirm("Should password contain lowercase characters?");
             if (lowerCase === true) {
                 selection = true;
+                // added the "+=" operator to join the character choices with the next options of characters
                 options += lowerCaseAlph;
             }
 
@@ -63,7 +63,6 @@ function generatePassword () {
             };
         } else {
             alert("Please enter a number between 8 to 128")
-        };
 };
 
 return outputPassword;
