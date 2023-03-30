@@ -59,10 +59,20 @@ function generatePassword () {
                 options += specialCharacter
             }
 
+            if (selection === false) {
+                alert("At lease one choice of lowercase, uppercase, number, and special character must be confirmed.");
+            } else {
 
-            var
-        }
-    }
+                for (i = 1; i < passwordLength ; i++) {
+                    outputPassword += options [Math.floor(Math.random()*options.length)];
+                };
+            };
+        } else {
+            alert("Please enter a number between 8 to 128")
+        };
+};
+
+return outputPassword;
 }
 
 
