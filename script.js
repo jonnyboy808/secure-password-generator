@@ -32,6 +32,34 @@ function generatePassword () {
 
             alert("Please choose one upper, lower, number, and special");
 
+            var selection = false;
+            var options = "";
+
+            var lowerCase = confirm("Should password contain lowercase characters?");
+            if (lowerCase === true) {
+                selection = true;
+                options += lowerCaseAlph;
+            }
+
+            var upperCase = confirm("Should password contain uppercase characters?");
+            if (upperCase === true) {
+                selection = true;
+                options += upperCaseAplh;
+            }
+
+            var num = confirm("Should password contain numbers?");
+            if (num === true) {
+                selection = true;
+                options += numbers;
+            }
+
+            var special = confirm("Should password contain special charaters?");
+            if (special === true) {
+                selection = true;
+                options += specialCharacter
+            }
+
+
             var
         }
     }
