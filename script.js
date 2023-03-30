@@ -20,11 +20,11 @@ var specialCharacter = "!@#$%^&*()_-~,.;=<>+?";
 function generatePassword () {
     var outputPassword = "";
 
-    var passwordLength = prompt ("Select Length between 8 to 128 characters");
+    var passwordLength = prompt ("Select a Length between 8 to 128 characters");
     if (passwordLength !=null) {
         if (passwordLength >=8 && passwordLength <= 128) {
 
-            alert("Please choose one upper, lower, number, and special");
+            alert("Minimum of one uppercase, lowercase, number, and/ or special character must be selected");
 
             var selection = false;
             var options = "";
@@ -54,10 +54,10 @@ function generatePassword () {
             }
 
             if (selection === false) {
-                alert("At lease one choice of lowercase, uppercase, number, and special character must be confirmed.");
+                alert("Error: Minimum one type of character must be selected to use this generator.");
             } else {
 
-                for (i = 1; i < passwordLength ; i++) {
+                for (i = 0; i < passwordLength ; i++) {
                     outputPassword += options [Math.floor(Math.random()*options.length)];
                 };
             };
