@@ -8,19 +8,13 @@ function writePassword() {
   
   passwordText.value = password;
   return;
-
-}
+};
 
 // List of character options
 var lowerCaseAlph = "abcdefghijklmnopqrstuvwxyz";
 var upperCaseAplh = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "0123456789";
 var specialCharacter = "!@#$%^&*()_-~,.;=<>+?";
-
-var lowerCaseAlph = [];
-var upperCaseAplh = [];
-var numbers = [];
-var specialCharacter = [];
 
 // create password function
 function generatePassword () {
