@@ -12,10 +12,12 @@ No type of installation needed for this application, simply visit the above link
 
 ## Usage
 
-This site contains a password generator to help the user create a password with their desired length between 8 to 128 characters. Shortly after the user selects their desired password length a message pops up letting the user know of the minimum requirement that is needed inorder to use this generator and populate a finished generated password.  
+This site contains a password generator to help the user create a password with their desired length between 8 to 128 characters. Shortly after the user selects their desired password length a message pops up letting the user know of the minimum requirement that is needed inorder to use this generator and populate a finished generated password.
+
 ![Example of box notating user input requirements](assets/images/requirements.png)
 
  This generator does require the password to at least contain one type of character, and should the user not select any at all, an error box will appear noting that.
+ 
 ![Example of error box](assets/images/error_box.png)
 
 ---
